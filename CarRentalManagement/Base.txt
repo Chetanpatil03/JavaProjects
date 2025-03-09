@@ -15,3 +15,9 @@
         car brand  --- String
         Base price  ---Long
         isAvailable -- Boolean
+
+    Features :
+        Rent a car
+        Get Confirmation
+        Using java OOPs only
+        
