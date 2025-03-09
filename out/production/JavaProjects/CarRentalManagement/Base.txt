@@ -1,0 +1,23 @@
+
+
+    The car rental system in java using OOPs Concept.
+
+    There are mainly Four Class
+
+    1.Car 
+    2.Rental 
+    3.Customer
+    4.Car Rental System
+
+    Car have :
+        car id ---- Interger
+        car name ---- String
+        car brand  --- String
+        Base price  ---Long
+        isAvailable -- Boolean
+
+    Features :
+        Rent a car
+        Get Confirmation
+        Using java OOPs only
+        
