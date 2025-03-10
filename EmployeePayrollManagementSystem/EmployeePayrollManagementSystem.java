@@ -48,6 +48,23 @@ class  FullTimeEmployee extends Employee {
     
 }
 
+class  PartTimeEmployee extends Employee {
+    private int hoursWork;
+    private double hourlyRate;
+
+    public PartTimeEmployee(String name,int id,int hoursWork,double hourlyRate){
+        super(name, id);
+        this.hourlyRate = hourlyRate;
+        this.hoursWork = hoursWork;
+    }
+
+    @Override
+    public double calculateSalary(){
+        return hourlyRate*hoursWork;
+    }
+    
+}
+
 public class EmployeePayrollManagementSystem {
     
 }
