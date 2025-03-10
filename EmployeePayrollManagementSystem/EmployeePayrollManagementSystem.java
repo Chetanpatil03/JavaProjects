@@ -33,6 +33,18 @@ abstract class Employee {
     
 }
 
+class  FullTimeEmployee extends Employee {
+    
+    public FullTimeEmployee(String name,int id){
+        super(name, id);
+    }
+
+    public double calculateSalary(){
+        return
+    }
+    
+}
+
 public class EmployeePayrollManagementSystem {
     
 }
