@@ -1,0 +1,10 @@
+A CBS for payroll management system
+
+in this mainly for classes : 
+    1.Employee------------ Abstract class
+    2.Full-timeEmployee ---------- Inherited from Employee
+    3.Part-timeEmployee ---------- Inherited from Employee
+    4.Payroll
+    5.System
+
+    
