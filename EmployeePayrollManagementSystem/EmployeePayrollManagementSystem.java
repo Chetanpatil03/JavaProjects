@@ -34,13 +34,16 @@ abstract class Employee {
 }
 
 class  FullTimeEmployee extends Employee {
-    
-    public FullTimeEmployee(String name,int id){
+    private double MonthlySalary;
+
+    public FullTimeEmployee(String name,int id,double MonthlySalary){
         super(name, id);
+        this.MonthlySalary =  MonthlySalary;
     }
 
+    @Override
     public double calculateSalary(){
-        return
+        return MonthlySalary;
     }
     
 }
