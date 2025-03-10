@@ -33,7 +33,7 @@ abstract class Employee {
     
 }
 
-class  FullTimeEmployee extends Employee {
+class FullTimeEmployee extends Employee {
     private double MonthlySalary;
 
     public FullTimeEmployee(String name,int id,double MonthlySalary){
@@ -48,7 +48,7 @@ class  FullTimeEmployee extends Employee {
     
 }
 
-class  PartTimeEmployee extends Employee {
+class PartTimeEmployee extends Employee {
     private int hoursWork;
     private double hourlyRate;
 
@@ -65,6 +65,10 @@ class  PartTimeEmployee extends Employee {
     
 }
 
+class PayrollSystem {
+    private ArrayList<Employee>;
+    
+}
 public class EmployeePayrollManagementSystem {
     
 }
