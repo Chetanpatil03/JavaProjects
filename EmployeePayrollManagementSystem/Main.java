@@ -108,7 +108,16 @@ public class Main {
 
         payrollSystem.addEmployee(partTimeEmployee);
         payrollSystem.addEmployee(fullTimeEmployee);
-        
+
+
+        System.out.println("\nInitial employee details : ");
+        payrollSystem.displayEmployee();
+
+        System.out.println("\nRemoving Employee : ");
+        payrollSystem.removeEmployee(2);
+
+        System.out.println("\nRemaining Employee Display");
+        payrollSystem.displayEmployee();
     }
     
 }
