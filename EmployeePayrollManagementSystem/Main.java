@@ -1,5 +1,4 @@
 package EmployeePayrollManagementSystem;
-import java.util.*;
 import java.util.ArrayList;
 
 abstract class Employee {
@@ -27,8 +26,8 @@ abstract class Employee {
 
     @Override
     public String toString(){
-        String s = "Employee{" + "name='" + name + '\'' + ", id=" + id + ",salary = \"calculateSalary()+\"}";
-        return s;
+        
+        return "Employee{" + "name='" + name + '\'' + ", id=" + id + ", salary = "+calculateSalary()+"}";
     }
     
 }
