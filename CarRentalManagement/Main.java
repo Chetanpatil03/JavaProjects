@@ -30,12 +30,20 @@ class Car {
         return carBrand;
     }
 
-    public double calculatePrice(){
-        return basePricePerDay; 
+    public double calculatePrice(int rentalDays){
+        return basePricePerDay * rentalDays; 
     }
 
     public boolean isAvailable(){
         return isAvailable;
+    }
+
+    public void rent(){
+        isAvailable = false;
+    }
+
+    public void returnCar(){
+        isAvailable = true;
     }
 
 
