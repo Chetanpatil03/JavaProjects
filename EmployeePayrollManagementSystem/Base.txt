@@ -4,7 +4,18 @@ in this mainly for classes :
     1.Employee------------ Abstract class
     2.Full-timeEmployee ---------- Inherited from Employee
     3.Part-timeEmployee ---------- Inherited from Employee
-    4.Payroll
-    5.System
+    4.PayrollSystem ------------- To manage Employees
+    5. Main ------------------ In which there is main function is present.
 
+Firstly Employee class is an Abstract class in which we are implementing Abstraction there is all the variables or fields are private they do not have direct access to the user.
+
+Full-timeEmployee class is Inherited from Employee in which we implement the Abstract method which is calculate salary on the basis of monthly salary.
+
+Part-timeEmployee class is Inherited from Employee in which we implement the Abstract method which is calculate salary on the basis of hours of work multifly by hours rate of work.
+
+In PayrollSystem class we manage all the functionality which is add Employee, list/display Employee, remove Employee,
+
+For storage we are using ArrayList of the collection framework.
+
+And last
     
