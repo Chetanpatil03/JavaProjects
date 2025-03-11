@@ -112,7 +112,7 @@ public class Main {
         System.out.println("\nInitial employee details : ");
         payrollSystem.displayEmployee();
 
-        System.out.println("\nRemoving Employee : ");
+        System.out.println("\nRemoving Employee : 2");
         payrollSystem.removeEmployee(2);
 
         System.out.println("\nRemaining Employee Display");
