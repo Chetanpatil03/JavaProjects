@@ -5,6 +5,8 @@ abstract class Employee {
     private String name;
     private int id;
 
+    //implementing abstraction 
+
     public Employee(String name,int id){
         this.id = id;
         this.name = name;
@@ -42,12 +44,13 @@ class FullTimeEmployee extends Employee {
 
     @Override
     public double calculateSalary(){
+        //runtime polymorphism
         return MonthlySalary;
     }
     
 }
 
-class PartTimeEmployee extends Employee {
+class PartTimeEmployee extends Employee { //inheritance
     private int hoursWork;
     private double hourlyRate;
 
@@ -59,6 +62,7 @@ class PartTimeEmployee extends Employee {
 
     @Override
     public double calculateSalary(){
+        //runtime polymorphism
         return hourlyRate*hoursWork;
     }
     
