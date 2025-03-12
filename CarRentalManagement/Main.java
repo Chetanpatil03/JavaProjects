@@ -51,11 +51,12 @@ class Car {
 class Customer{
     private String CustName;
     private int Custid;
-    private int adharNo;
+    private int phone;
     
-    public Customer(String CustName, int Custid){
+    public Customer(String CustName, int Custid,int phone){
         this.CustName = CustName;
         this.Custid = Custid;
+        this.phone = phone;
     }
 
     public String getCustName(){
@@ -63,6 +64,10 @@ class Customer{
     }
     public int getCustId(){
         return Custid;
+    }
+
+    public int getCustPhone(){
+        return phone;
     }
 }
 
