@@ -38,6 +38,15 @@
     Customer have : 
         Customer id ----- Interger
         Customer name ---------- String
-        Customer AadharNo --------- Interger
+        Customer Phone no --------- Interger
 
-        
+        Also have methods :
+
+        getter methods :
+        -getCustName
+        -getCustId
+        -getCustPhone
+
+    This class have all the information about the Customer which is going to rent a car.
+    we store all data in ArrayList.
+    
