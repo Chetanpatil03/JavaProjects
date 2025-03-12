@@ -49,10 +49,21 @@ class Car {
 }
 
 class Customer{
-    private String name;
+    private String CustName;
     private int Custid;
     private int adharNo;
-    private 
+    
+    public Customer(String CustName, int Custid){
+        this.CustName = CustName;
+        this.Custid = Custid;
+    }
+
+    public String getCustName(){
+        return CustName;
+    }
+    public int getCustId(){
+        return Custid;
+    }
 }
 
 public class Main{
