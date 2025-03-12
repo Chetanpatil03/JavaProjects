@@ -2,6 +2,12 @@
 
     The car rental system in java using OOPs Concept.
 
+    Features :
+        Rent a car
+        Get Confirmation
+        Using java OOPs only
+
+
     There are mainly Four Class
 
     1.Car 
@@ -17,12 +23,17 @@
         isAvailable -- Boolean
 
         also have methods:
-            
+           -getter methods like :
+            -getCarId
+            -getCarName
+            -getCarModel
+          
+          -calculatePrice
+          -isAvailable
+          -Rent
+          -returnCar
 
-    Features :
-        Rent a car
-        Get Confirmation
-        Using java OOPs only
+        With the help of this methods we manage car like car is available or not, calculate price, take rent, car return procedure etc.
 
     Customer have : 
         Customer id ----- Interger
