@@ -46,9 +46,13 @@ class Car {
         isAvailable = true;
     }
 
+}
 
-
-    
+class Customer{
+    private String name;
+    private int Custid;
+    private int adharNo;
+    private 
 }
 
 public class Main{

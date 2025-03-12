@@ -16,8 +16,17 @@
         Base price  ---Long
         isAvailable -- Boolean
 
+        also have methods:
+            
+
     Features :
         Rent a car
         Get Confirmation
         Using java OOPs only
+
+    Customer have : 
+        Customer id ----- Interger
+        Customer name ---------- String
+        Customer AadharNo --------- Interger
+
         
