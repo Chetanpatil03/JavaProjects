@@ -49,6 +49,7 @@ class Car {
 }
 
 class Customer{
+    //Encapsultion and abstraction are implemented
     private String CustName;
     private int Custid;
     private int phone;
