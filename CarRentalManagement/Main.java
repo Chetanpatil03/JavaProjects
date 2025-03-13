@@ -131,22 +131,7 @@ class CarRentalSystem{
     public void returnCar(Car car){
         Rental rentalToRemove = null;
         
-        for(Rental rental : rentals){
-            if (rental.getCar() == car) {
-                rentalToRemove = rental;
-                break;
-            }
-        }
-
-        if (rentalToRemove != null) {
-            rentals.remove(rentalToRemove);
-            System.out.println("Car returned Successfully........!");
-        }
-        else{
-            System.out.println("Car was not Rented");
-        }
-
-        car.returnCar();
+        
     }
 }
 
