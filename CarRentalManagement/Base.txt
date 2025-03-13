@@ -49,4 +49,24 @@
 
     This class have all the information about the Customer which is going to rent a car.
     we store all data in ArrayList.
+
+    Rental class have:
+
+        Customer ---------- Customer
+        Car ----------------- Car
+        Day --------------- int 
+        private data members.
+
+        Have methods like :
+            getCar()
+            getCustomer()
+            getDay()
+        
+        this class is used to manage the customers and cars.
+
+    
+    CarRentalSystem:
+    
+
+
     
