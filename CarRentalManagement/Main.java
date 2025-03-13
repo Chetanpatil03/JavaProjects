@@ -1,5 +1,7 @@
 package CarRentalManagement;
 
+import java.util.ArrayList;
+
 class Car {
 
     //encapsulation all data members are private.
@@ -97,7 +99,56 @@ class Rental{
     }
 }
 
+class CarRentalSystem{
+    private ArrayList<Car> cars;
+    private ArrayList<Customer> customers;
+    private ArrayList<Rental> rentals;
 
+    public CarRentalSystem(){
+        cars = new ArrayList<>();
+        customers = new ArrayList<>();
+        rentals = new ArrayList<>();
+    }
+
+    public void addCar(Car car){
+        cars.add(car); 
+    }
+
+    public void addCustomer(Customer customer){
+        customers.add(customer);
+    }
+
+    public void rentCar(Car car,Customer customer,int days){
+        if (car.isAvailable()) {
+            car.rent();
+            rentals.add(new Rental(car, customer, days));
+        }
+        else{
+            System.out.println("The car is not available for rent ..........");
+        }
+    }
+
+    public void returnCar(Car car){
+        Rental rentalToRemove = null;
+        
+        for(Rental rental : rentals){
+            if (rental.getCar() == car) {
+                rentalToRemove = rental;
+                break;
+            }
+        }
+
+        if (rentalToRemove != null) {
+            rentals.remove(rentalToRemove);
+            System.out.println("Car returned Successfully........!");
+        }
+        else{
+            System.out.println("Car was not Rented");
+        }
+
+        car.returnCar();
+    }
+}
 
 public class Main{
 
