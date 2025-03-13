@@ -84,15 +84,14 @@ class Rental{
         this.days = days;
     }
 
-    public Car getCar(){
+    Car getCar(){
         return car;
     }
-
-    public Customer getCustomer(){
+    Customer getCustomer(){
         return customer;
     }
 
-    public int getDays(){
+     int getDays(){
         return days;
     }
 }
