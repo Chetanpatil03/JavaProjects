@@ -76,5 +76,47 @@
 
     Also have method for adding and managing car information.
 
+    
+    public void addCar(Car car){
+        cars.add(car); 
+    }
+
+    public void addCustomer(Customer customer){
+        customers.add(customer);
+    }
+
+    public void rentCar(Car car,Customer customer,int days){
+        if (car.isAvailable()) {
+            car.rent();
+            rentals.add(new Rental(car, customer, days));
+        }
+        else{
+            System.out.println("The car is not available for rent ..........");
+        }
+    }
+
+    public void returnCar(Car car){
+        Rental rentalToRemove = null;
+        
+        for(Rental rental : rentals){
+            if (rental.getCar() == car) {
+                rentalToRemove = rental;
+                break;
+            }
+        }
+
+        if (rentalToRemove != null) {
+            rentals.remove(rentalToRemove);
+            System.out.println("Car returned Successfully........!");
+        }
+        else{
+            System.out.println("Car was not Rented");
+        }
+
+        car.returnCar();
+    }
+
+    with rhod
+
 
     
