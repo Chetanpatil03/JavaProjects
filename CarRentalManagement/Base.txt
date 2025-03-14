@@ -66,7 +66,15 @@
 
     
     CarRentalSystem:
-    
+    Created ArrayList for storing car information
+
+    has data variables as :
+    private ArrayList<Car> cars;
+    private ArrayList<Customer> customers;
+    private ArrayList<Rental> rentals;
+
+
+    Also have method for adding and managing car information.
 
 
     
