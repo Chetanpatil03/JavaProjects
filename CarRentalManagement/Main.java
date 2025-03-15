@@ -1,6 +1,9 @@
 package CarRentalManagement;
 
+import java.nio.channels.Pipe.SourceChannel;
+import java.text.NumberFormat.Style;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 class Car {
 
@@ -153,6 +156,27 @@ class CarRentalSystem{
 public class Main{
 
     public static void main(String[] args) {
-        System.out.println("Car Rental management System in java");
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("*********** Car rental System ***********");
+            System.out.println("1. Rent Car");
+            System.out.println("2. Return Car");
+            System.out.println("3. Exit");
+            System.out.println("Enter Your choice : ");
+
+            int ch = sc.nextInt();
+
+            if (ch ==  1) {
+                System.out.println("\n*** Rent a Car ***");
+                System.out.println("Enter Your Name : ");
+                String custName = sc.nextLine();
+
+                System.out.println("Available Cars -- ");
+                for(Car car : cars){
+                    
+                }
+            }
+        }
     }
 }
