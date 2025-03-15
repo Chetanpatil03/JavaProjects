@@ -153,9 +153,8 @@ class CarRentalSystem{
     }
 }
 
-public class Main{
+public class Menu{
 
-    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
@@ -174,9 +173,15 @@ public class Main{
 
                 System.out.println("Available Cars -- ");
                 for(Car car : cars){
-                    
+
                 }
             }
         }
+}
+
+public class Main{
+
+    public static void main(String[] args) {
+
     }
 }
