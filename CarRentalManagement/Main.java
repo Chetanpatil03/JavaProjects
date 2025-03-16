@@ -225,6 +225,9 @@ class CarRentalSystem{
                     System.out.println("\nInvalid car selection or car not available for rent");
                 }
             }
+            if (ch == 2) {
+                System.out.println("for return");
+            }
         }
     }
 }
