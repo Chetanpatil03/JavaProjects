@@ -151,9 +151,9 @@ class CarRentalSystem{
 
         car.returnCar();
     }
-}
 
-class Menu{
+
+    public void Menu(){
 
         Scanner sc = new Scanner(System.in);
 
@@ -177,6 +177,7 @@ class Menu{
                 }
             }
         }
+    }
 }
 
 public class Main{
