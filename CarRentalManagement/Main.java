@@ -56,10 +56,10 @@ class Car {
 class Customer{
     //Encapsultion and abstraction are implemented
     private String CustName;
-    private int Custid;
+    private String Custid;
     private int phone;
     
-    public Customer(String CustName, int Custid,int phone){
+    public Customer(String CustName, String Custid,int phone){
         this.CustName = CustName;
         this.Custid = Custid;
         this.phone = phone;
@@ -68,7 +68,7 @@ class Customer{
     public String getCustName(){
         return CustName;
     }
-    public int getCustId(){
+    public String getCustId(){
         return Custid;
     }
 
@@ -165,15 +165,45 @@ class CarRentalSystem{
             System.out.println("Enter Your choice : ");
 
             int ch = sc.nextInt();
+            sc.nextLine(); //for new line
 
             if (ch ==  1) {
                 System.out.println("\n*** Rent a Car ***");
                 System.out.println("Enter Your Name : ");
                 String custName = sc.nextLine();
+                System.out.println("Enter Your Mobile : ");
+                int custNo = sc.nextInt();
+
 
                 System.out.println("Available Cars -- ");
                 for(Car car : cars){
+                    if (car.isAvailable()) {
+                        System.out.println(car.getCarId() + " - " + car.getCarBrand() + " " + car.getCarModel());
+                    }
+                }
 
+                System.out.println("Enter the carId you want to rent : ");
+                String carId = sc.nextLine();
+
+                System.out.println("Enter number of days : ");
+                int rentalDays = sc.nextInt();
+                sc.nextLine(); //consume new line
+
+                Customer newCustomer = new Customer(custName,"Cus "+customers.size() +1,custNo);
+
+                addCustomer(newCustomer);
+
+                Car selectedCar = null;
+                for(Car car: cars){
+                    if (car.getCarId().equals(carId) && car.isAvailable()) {
+                        selectedCar = car;  
+                    }
+                }
+
+                if (selectedCar != null) {
+                    double totalPrice = selectedCar.calculatePrice(rentalDays);
+                    System.out.println("\n == Rental information...\n");
+                    
                 }
             }
         }
