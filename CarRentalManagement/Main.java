@@ -202,8 +202,27 @@ class CarRentalSystem{
 
                 if (selectedCar != null) {
                     double totalPrice = selectedCar.calculatePrice(rentalDays);
-                    System.out.println("\n == Rental information...\n");
-                    
+                    System.out.println("\n == Rental information ==\n");
+                    System.out.println("Customer ID : "+newCustomer.getCustId());
+                    System.out.println("Customer Name : "+newCustomer.getCustName());
+                    System.out.println("Customer Number : "+newCustomer.getCustPhone());
+                    System.out.println("Car : "+selectedCar.getCarBrand() +" "+selectedCar.getCarModel());
+                    System.out.println("Rental Days : "+rentalDays);
+                    System.out.println("Total price : "+totalPrice);
+
+                    System.out.println("\n Confirm Rental [Y/N] : ");
+                    String confirmString = sc.nextLine();
+
+                    if (confirmString.equalsIgnoreCase("Y")) {
+                        rentCar(selectedCar, newCustomer, rentalDays);
+                        System.out.println("\nCar rented successfully.....\n");
+                    }
+                    else{
+                        System.out.println("\nRental canceled..");
+                    }
+                }
+                else{
+                    System.out.println("\nInvalid car selection or car not available for rent");
                 }
             }
         }
