@@ -263,8 +263,15 @@ class CarRentalSystem{
                     System.out.println("Invalid car ID or car was not rented");
                 }
             }
+            else if (ch==3) {
+                break;
+            }
+            else{
+                System.out.println("Invalid choice!, Please enter valid option.");
+            }
 
         }
+        System.out.println("Thank you for using Car Retal System.");
     }
 }
 
