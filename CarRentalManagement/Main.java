@@ -226,7 +226,13 @@ class CarRentalSystem{
                 }
             }
             if (ch == 2) {
-                System.out.println("for return");
+                System.out.println("\n*** Return a Car ***");
+                System.out.println("Enter Car id : ");
+                String iString = sc.nextLine();
+
+                if (iString.equals()) {
+                    
+                }
             }
         }
     }
