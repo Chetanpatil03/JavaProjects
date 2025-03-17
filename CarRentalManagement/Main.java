@@ -278,6 +278,16 @@ class CarRentalSystem{
 public class Main{
 
     public static void main(String[] args) {
-        System.out.println("Car Rental Management System......");
+        CarRentalSystem rentalSystem = new CarRentalSystem();
+
+        Car car1 = new Car("C001", "Thar", "Mahindra", 150, false);
+        Car car2 = new Car("C002", "Fortuner", "Toyota", 300, false);
+        Car car3 = new Car("C003", "Safari", "TATA", 200, false);
+
+        rentalSystem.addCar(car3);
+        rentalSystem.addCar(car2);
+        rentalSystem.addCar(car1);
+
+        rentalSystem.Menu();
     }
 }
