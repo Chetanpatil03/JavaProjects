@@ -185,12 +185,11 @@ class CarRentalSystem{
                 System.out.println("Enter the carId you want to rent : ");
                 String carId = sc.nextLine();
 
-                System.out.println("Enter number of days : ");
+                System.out.println("Enter number of days for rent: ");
                 int rentalDays = sc.nextInt();
                 sc.nextLine(); //consume new line
 
-                Customer newCustomer = new Customer(custName,"Cus "+customers.size() +1,custNo);
-
+                Customer newCustomer = new Customer(custName,"CUS"+customers.size()+1, custNo);
                 addCustomer(newCustomer);
 
                 Car selectedCar = null;
@@ -202,13 +201,14 @@ class CarRentalSystem{
 
                 if (selectedCar != null) {
                     double totalPrice = selectedCar.calculatePrice(rentalDays);
+
                     System.out.println("\n == Rental information ==\n");
                     System.out.println("Customer ID : "+newCustomer.getCustId());
                     System.out.println("Customer Name : "+newCustomer.getCustName());
                     System.out.println("Customer Number : "+newCustomer.getCustPhone());
                     System.out.println("Car : "+selectedCar.getCarBrand() +" "+selectedCar.getCarModel());
                     System.out.println("Rental Days : "+rentalDays);
-                    System.out.println("Total price : "+totalPrice);
+                    System.out.println("Total price : $%.2f%n "+totalPrice);
 
                     System.out.println("\n Confirm Rental [Y/N] : ");
                     String confirmString = sc.nextLine();
@@ -228,10 +228,19 @@ class CarRentalSystem{
             if (ch == 2) {
                 System.out.println("\n*** Return a Car ***");
                 System.out.println("Enter Car id : ");
-                String iString = sc.nextLine();
+                String carIdString = sc.nextLine();
 
-                if (iString.equals()) {
-                    
+                Car carToReturn = null;
+                
+                for(Car car : cars){
+                    if (car.getCarId().equals(carIdString) && car.isAvailable()) {
+                        carToReturn = car;
+                        break;
+                    }
+                }
+
+                if (carToReturn != null) {
+                    cars.remove(carToReturn);
                 }
             }
         }
