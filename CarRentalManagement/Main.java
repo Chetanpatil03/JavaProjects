@@ -57,9 +57,9 @@ class Customer{
     //Encapsultion and abstraction are implemented
     private String CustName;
     private String Custid;
-    private int phone;
+    private long phone;
     
-    public Customer(String CustName, String Custid,int phone){
+    public Customer(String CustName, String Custid,long phone){
         this.CustName = CustName;
         this.Custid = Custid;
         this.phone = phone;
@@ -72,7 +72,7 @@ class Customer{
         return Custid;
     }
 
-    public int getCustPhone(){
+    public long getCustPhone(){
         return phone;
     }
 }
@@ -172,7 +172,7 @@ class CarRentalSystem{
                 System.out.println("Enter Your Name : ");
                 String custName = sc.nextLine();
                 System.out.println("Enter Your Mobile : ");
-                int custNo = sc.nextInt();
+                long custNo = sc.nextLong();
 
 
                 System.out.println("Available Cars -- ");
@@ -183,11 +183,12 @@ class CarRentalSystem{
                 }
 
                 System.out.println("Enter the carId you want to rent : ");
-                String carId = sc.nextLine();
+                String carId = sc.next();
+                // sc.nextLine(); //consume new line
 
                 System.out.println("Enter number of days for rent: ");
                 int rentalDays = sc.nextInt();
-                sc.nextLine(); //consume new line
+                // sc.nextLine(); //consume new line
 
                 Customer newCustomer = new Customer(custName,"CUS"+customers.size()+1, custNo);
                 addCustomer(newCustomer);
@@ -208,10 +209,10 @@ class CarRentalSystem{
                     System.out.println("Customer Number : "+newCustomer.getCustPhone());
                     System.out.println("Car : "+selectedCar.getCarBrand() +" "+selectedCar.getCarModel());
                     System.out.println("Rental Days : "+rentalDays);
-                    System.out.println("Total price : $%.2f%n "+totalPrice);
+                    System.out.println("Total price :  "+totalPrice);
 
                     System.out.println("\n Confirm Rental [Y/N] : ");
-                    String confirmString = sc.nextLine();
+                    String confirmString = sc.next();
 
                     if (confirmString.equalsIgnoreCase("Y")) {
                         rentCar(selectedCar, newCustomer, rentalDays);
@@ -228,7 +229,7 @@ class CarRentalSystem{
             if (ch == 2) {
                 System.out.println("\n*** Return a Car ***");
                 System.out.println("Enter Car id : ");
-                String carIdString = sc.nextLine();
+                String carIdString = sc.next();
 
                 Car carToReturn = null;
                 
