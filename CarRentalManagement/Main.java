@@ -143,10 +143,10 @@ class CarRentalSystem{
 
         if (rentalToRemove != null) {
             rentals.remove(rentalToRemove);
-            System.out.println("Car returned Successfully........!");
+            //System.out.println("Car returned Successfully........!");
         }
         else{
-            System.out.println("Car was not Rented");
+            //System.out.println("Car was not Rented");
         }
 
         car.returnCar();
@@ -239,10 +239,31 @@ class CarRentalSystem{
                     }
                 }
 
-                if (carToReturn != null) {
-                    cars.remove(carToReturn);
+                Customer customer = null;
+                if (carToReturn != null) 
+                {
+                    
+                    for(Rental rental:rentals){
+                        if (rental.getCar() == carToReturn) {
+                            customer = rental.getCustomer();
+                            break;
+                        }
+                    }
+                
+
+                    if (customer != null) {
+                        returnCar(carToReturn);
+                    System.out.println("Car returned Successfully by "+customer.getCustName());
+                    }
+                    else{
+                    System.out.println("Car was not rented or information is missing.....");
+                    }
+                }
+                else{
+                    System.out.println("Invalid car ID or car was not rented");
                 }
             }
+
         }
     }
 }
