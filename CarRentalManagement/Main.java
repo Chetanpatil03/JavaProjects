@@ -286,9 +286,11 @@ public class Main{
         Car car3 = new Car("C003", "Safari", "TATA", 2000, false);
         Car car4 = new Car("C004", "Swift", "Suzuki", 1000, false);
 
+
         rentalSystem.addCar(car3);
         rentalSystem.addCar(car2);
         rentalSystem.addCar(car1);
+        rentalSystem.addCar(car4);
 
         rentalSystem.Menu();
     }
