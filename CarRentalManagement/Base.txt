@@ -133,7 +133,23 @@
 
    4. Main class :
 
-    All the nessarry objects are Created here. 
+    All the nessarry objects are Created here.
+
+    Main FUNCTION: 
+    
+    public static void main(String[] args) {
+        CarRentalSystem rentalSystem = new CarRentalSystem();
+
+        Car car1 = new Car("C001", "Thar", "Mahindra", 150, false);
+        Car car2 = new Car("C002", "Fortuner", "Toyota", 300, false);
+        Car car3 = new Car("C003", "Safari", "TATA", 200, false);
+
+        rentalSystem.addCar(car3);
+        rentalSystem.addCar(car2);
+        rentalSystem.addCar(car1);
+
+        rentalSystem.Menu();
+    } 
 
 
     
