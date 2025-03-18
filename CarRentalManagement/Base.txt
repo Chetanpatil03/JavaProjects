@@ -124,7 +124,16 @@
         built for show menu on Terminal screen.
 
         it has all the formating for the project.
-        
+
+
+        mainly three parts
+        1. take car on rent
+        2. Return car 
+        3. Exit from the menu.
+
+   4. Main class :
+
+    All the nessarry objects are Created here. 
 
 
     
