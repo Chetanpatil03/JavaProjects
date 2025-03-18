@@ -281,9 +281,10 @@ public class Main{
     public static void main(String[] args) {
         CarRentalSystem rentalSystem = new CarRentalSystem();
 
-        Car car1 = new Car("C001", "Thar", "Mahindra", 150, false);
-        Car car2 = new Car("C002", "Fortuner", "Toyota", 300, false);
-        Car car3 = new Car("C003", "Safari", "TATA", 200, false);
+        Car car1 = new Car("C001", "Thar", "Mahindra", 1500, false);
+        Car car2 = new Car("C002", "Fortuner", "Toyota", 3000, false);
+        Car car3 = new Car("C003", "Safari", "TATA", 2000, false);
+        Car car4 = new Car("C004", "Swift", "Suzuki", 1000, false);
 
         rentalSystem.addCar(car3);
         rentalSystem.addCar(car2);
