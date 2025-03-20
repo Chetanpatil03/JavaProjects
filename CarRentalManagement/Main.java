@@ -199,7 +199,7 @@ class CarRentalSystem{
                     }
                 }
 
-                if (selectedCar != null) {
+                if (selectedCar != null) {  //if the selected car has something value
                     double totalPrice = selectedCar.calculatePrice(rentalDays);
 
                     System.out.println("\n == Rental information ==\n");
@@ -233,7 +233,7 @@ class CarRentalSystem{
                 Car carToReturn = null;
                 
                 for(Car car : cars){
-                    if (car.getCarId().equals(carIdString) || car.isAvailable()) {
+                    if (car.getCarId().equals(carIdString) || car.isAvailable()) { //if any of the one is true 
                         carToReturn = car;
                         break;
                     }
@@ -266,7 +266,7 @@ class CarRentalSystem{
             if (ch==3) {
                 break;
             }
-            if(ch!=1&&ch!=2){
+            if(ch!=1&&ch!=2){ //updated the test condition 
                 System.out.println("Invalid choice!, Please enter valid option.");
             }
 
@@ -278,6 +278,7 @@ class CarRentalSystem{
 public class Main{
 
     public static void main(String[] args) {
+        
         CarRentalSystem rentalSystem = new CarRentalSystem();
 
         Car car1 = new Car("C001", "Thar", "Mahindra", 1500, false);
