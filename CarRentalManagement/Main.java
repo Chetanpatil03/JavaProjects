@@ -253,7 +253,7 @@ class CarRentalSystem{
 
                     if (customer != null) {
                         returnCar(carToReturn);
-                    System.out.println("Car returned Successfully by "+customer.getCustName());
+                        System.out.println("Car returned Successfully by "+customer.getCustName());
                     }
                     else{
                     System.out.println("Car was not rented or information is missing.....");
@@ -263,12 +263,12 @@ class CarRentalSystem{
                     System.out.println("Invalid car ID or car was not rented");
                 }
             }
-            else if (ch==3) {
+            if (ch==3) {
                 break;
             }
-            // else{
-            //     System.out.println("Invalid choice!, Please enter valid option.");
-            // }
+            else{
+                System.out.println("Invalid choice!, Please enter valid option.");
+            }
 
         }
         System.out.println("Thank you for using Car Retal System.");
