@@ -1,7 +1,5 @@
 package CarRentalManagement;
 
-import java.nio.channels.Pipe.SourceChannel;
-import java.text.NumberFormat.Style;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -103,6 +101,7 @@ class Rental{
 }
 
 class CarRentalSystem{
+    // using array list for storing the perticular type of objects.
     private ArrayList<Car> cars;
     private ArrayList<Customer> customers;
     private ArrayList<Rental> rentals;
@@ -267,9 +266,9 @@ class CarRentalSystem{
             else if (ch==3) {
                 break;
             }
-            else{
-                System.out.println("Invalid choice!, Please enter valid option.");
-            }
+            // else{
+            //     System.out.println("Invalid choice!, Please enter valid option.");
+            // }
 
         }
         System.out.println("Thank you for using Car Retal System.");
