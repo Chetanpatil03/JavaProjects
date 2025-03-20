@@ -266,7 +266,7 @@ class CarRentalSystem{
             if (ch==3) {
                 break;
             }
-            else{
+            if(ch!=1&&ch!=2){
                 System.out.println("Invalid choice!, Please enter valid option.");
             }
 
