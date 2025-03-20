@@ -233,7 +233,7 @@ class CarRentalSystem{
                 Car carToReturn = null;
                 
                 for(Car car : cars){
-                    if (car.getCarId().equals(carIdString) && car.isAvailable()) {
+                    if (car.getCarId().equals(carIdString) || car.isAvailable()) {
                         carToReturn = car;
                         break;
                     }
