@@ -2,12 +2,12 @@ package Task_Certification;
 
 class Student {
     private String name;
-    private String studentId;
+    private int studentId;
     private int qualifyingexammarks ;
     private char residentialstatus;
     private int yearofengg;
 
-    public Student(String name, String studentId, double gpa, int qualifyingexammarks, char residentialstatus, int yearofengg) {
+    public Student(String name, int studentId, int qualifyingexammarks, char residentialstatus, int yearofengg) {
         this.name = name;
         this.studentId = studentId;
         this.qualifyingexammarks = qualifyingexammarks;
@@ -24,19 +24,11 @@ class Student {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getStudentId() {
+    public int getStudentId() {
         return studentId;
     }
 
-    public void setStudentId(String studentId) {
+    public void setStudentId(int studentId) {
         this.studentId = studentId;
     }
 
@@ -69,7 +61,7 @@ class Student {
 public class StudentTester {
 
     public static void main(String[] args) {
-        Student student = new Student("John Doe", 20, "12345", 3.5,);
+        Student student = new Student("John Doe",101, 85, 'Y', 2023);
         System.out.println(student.getName()); // John Doe
         System.out.println(student.getAge()); // 20
         System.out.println(student.getStudentId()); // 12345
