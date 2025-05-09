@@ -70,11 +70,11 @@ public class StudentTester {
         System.out.println("Qualifying Exam Marks  : " + student_one.getQualifyingexammarks());
         
         if (student_one.getResidentialstatus() == 'H') {
-            System.out.println("Residential Status   : Hosteller");
-        } else if (student_one.getResidentialstatus() == 'D') {
-            System.out.println("Residential Status   : Day Scholar");
+            System.out.println("Residential Status     : Hosteller");
+        } else if (student_one.getResidentialstatus() == 'D')
+            System.out.println("Residential Status     : Day Scholar");
         
-            System.out.println("Year of Engineering    : " + student_one.getYearofengg());
+        System.out.println("Year of Engineering    : " + student_one.getYearofengg());
         
         
         System.out.println("\n\noutput for student_two:\n\n");
@@ -82,9 +82,9 @@ public class StudentTester {
         System.out.println("Student ID             : " + student_two.getStudentId());
         System.out.println("Qualifying Exam Marks  : " + student_two.getQualifyingexammarks());
         if (student_two.getResidentialstatus() == 'H') {
-            System.out.println("Residential Status   : Hosteller");
+            System.out.println("Residential Status     : Hosteller");
         } else if (student_two.getResidentialstatus() == 'D') {
-            System.out.println("Residential Status   : Day Scholar");
+            System.out.println("Residential Status     : Day Scholar");
         }
         System.out.println("Year of Engineering    : " + student_two.getYearofengg());
     }
