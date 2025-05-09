@@ -61,20 +61,34 @@ class Student {
 public class StudentTester {
 
     public static void main(String[] args) {
-        Student student = new Student("John Doe",101, 85, 'Y', 2023);
-        System.out.println(student.getName()); // John Doe
-        System.out.println(student.getAge()); // 20
-        System.out.println(student.getStudentId()); // 12345
-        System.out.println(student.getGpa()); // 3.5
+        Student student_one = new Student("John Doe",101, 80, 'H', 3);
+        Student student_two = new Student("Peter",102, 83, 'D', 2);
 
-        student.setName("Jane Doe");
-        student.setAge(21);
-        student.setStudentId("54321");
-        student.setGpa(3.8);
-
-        System.out.println(student.getName()); // Jane Doe
-        System.out.println(student.getAge()); // 21
-        System.out.println(student.getStudentId()); // 54321
-        System.out.println(student.getGpa()); // 3.8
+        System.out.println("output for student_one:\n\n");
+        System.out.println("Name: " + student_one.getName());
+        System.out.println("Student ID: " + student_one.getStudentId());
+        System.out.println("Qualifying Exam Marks: " + student_one.getQualifyingexammarks());
+        if (student_one.getResidentialstatus() == 'H') {
+            System.out.println("Residential Status: Hosteller");
+        } else if (student_one.getResidentialstatus() == 'D') {
+            System.out.println("Residential Status: Day Scholar");
+        } else {
+            System.out.println("Invalid Residential Status");            
+        }
+        System.out.println("Year of Engineering: " + student_one.getYearofengg());
+        
+        
+        System.out.println("\n\noutput for student_two:\n\n");
+        System.out.println("Name: " + student_two.getName());
+        System.out.println("Student ID: " + student_two.getStudentId());
+        System.out.println("Qualifying Exam Marks: " + student_two.getQualifyingexammarks());
+        if (student_two.getResidentialstatus() == 'H') {
+            System.out.println("Residential Status: Hosteller");
+        } else if (student_two.getResidentialstatus() == 'D') {
+            System.out.println("Residential Status: Day Scholar");
+        } else {
+            System.out.println("Invalid Residential Status");            
+        }
+        System.out.println("Year of Engineering: " + student_two.getYearofengg());
     }
 }
