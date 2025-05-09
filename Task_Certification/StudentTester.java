@@ -99,6 +99,8 @@ public class StudentTester {
             System.out.println("Residential Status     : Day Scholar");
         }
         System.out.println("Year of Engineering    : " + student_three.getYearofengg());
+        System.out.println("--------------------------------------------------\n\n");
+        System.out.println("All the details of students are printed successfully.");
         
     }
 }
