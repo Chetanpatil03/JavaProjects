@@ -272,6 +272,9 @@ class CarRentalSystem{
 
         }
         System.out.println("Thank you for using Car Retal System.");
+
+        sc.close(); //close the scanner to prevent resource leak
+        //System.out.println("Scanner closed successfully.");
     }
 }
 
