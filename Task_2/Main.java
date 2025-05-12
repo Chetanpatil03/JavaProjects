@@ -22,8 +22,12 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
         Student student = new Student("John Doe", 20, "Computer Science");
-        student.displayInfo();  // Display student information
+        student.displayInfo();   // Display student information
+
+        Student student2 = new Student("Jane Smith", 22, "Mathematics");
+        student2.displayInfo();  // Display student information
+        // Add more students as needed
         
-        // Create a new Student object
+        
     }
 }
