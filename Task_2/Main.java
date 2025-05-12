@@ -27,6 +27,7 @@ public class Main {
         Student student2 = new Student("Jane Smith", 22, "Mathematics");
         student2.displayInfo();  // Display student information
         // Add more students as needed
+
         
         
     }
