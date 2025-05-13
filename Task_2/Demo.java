@@ -7,6 +7,9 @@ public interface Demo {
 
     public static void main(String[] args) {
         System.out.println("Hello, World!");
+
+        System.out.println("Hello chetan");
+        System.out.println("Update required");
     
     }
     
